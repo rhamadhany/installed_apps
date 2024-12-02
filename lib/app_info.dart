@@ -60,6 +60,31 @@ class AppInfo {
     }
     return BuiltWith.native_or_others;
   }
+
+    Map<String, dynamic> toJson() {
+    return {
+      'packageName': packageName,
+      'name': name,
+      'icon': icon != null ? base64Encode(icon!) : null,
+      'versionName': versionName,
+      'versionCode': versionCode,
+      'builtWith': builtWith.toString().split('.').last,
+      'installedTimestamp': installedTimestamp,
+    };
+  }
+
+  factory AppInfo.fromJson(Map<String, dynamic> json) {
+    return AppInfo(
+      name: json['name'],
+      icon: json['icon'] != null ? base64Decode(json['icon']) : null,
+      packageName: json['packageName'],
+      versionName: json['versionName'],
+      versionCode: json['versionCode'],
+      builtWith: BuiltWith.values
+          .firstWhere((e) => e.toString() == 'BuiltWith.${json['builtWith']}'),
+      installedTimestamp: json['installedTimestamp'],
+    );
+  }
 }
 
 enum BuiltWith {
