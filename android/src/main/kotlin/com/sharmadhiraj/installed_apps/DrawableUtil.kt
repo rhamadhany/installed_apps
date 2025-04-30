@@ -21,6 +21,10 @@ class DrawableUtil {
             if (drawable is BitmapDrawable) {
                 return drawable.bitmap
             }
+
+            if (drawable.intrinsicWidth <= 0 || drawable.intrinsicHeight <= 0){
+                return Bitmap.createBitmap(1,1,Bitmap.Config.ARGB_8888)
+            }
             val bitmap = Bitmap.createBitmap(
                 drawable.intrinsicWidth,
                 drawable.intrinsicHeight,
@@ -33,3 +37,4 @@ class DrawableUtil {
         }
     }
 }
+
