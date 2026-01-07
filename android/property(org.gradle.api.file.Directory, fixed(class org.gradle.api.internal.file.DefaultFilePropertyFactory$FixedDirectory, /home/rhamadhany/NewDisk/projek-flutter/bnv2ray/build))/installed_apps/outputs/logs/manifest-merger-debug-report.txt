@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml:1:1-5:12
+	package
+		INJECTED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml
+INJECTED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/rhamadhany/NewDisk/projek-flutter/installed_apps/android/src/main/AndroidManifest.xml
